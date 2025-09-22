@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>즐거운_코딩</title>
+<style>
+   div{
+      margin-bottom: 20px;
+   }
+
+   .box1{
+      box-sizing: content-box; /* default : content 너비 + 좌우 padding + 좌우border + 좌우margin */
+      width: 200px;
+      height: 100px;
+      border: 10px solid #ccc;
+      padding: 20px;
+      margin: 5px;
+   }
+
+   .box2{
+      box-sizing: border-box; /* default : content 너비 */
+      width: 200px;
+      height: 100px;
+      border: 10px solid #f00;
+      padding: 20px;
+      margin: 5px;      
+   }
+
+</style>
+</head>
+<body>
+   <h2>box-sizing</h2>
+   <hr/>
+   <div class="box1">contents-box</div>
+   <div class="box2">border-box</div>
+   <div>2025. 7. 9</div> 
+</body>
+</html>

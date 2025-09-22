@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>즐거운_코딩</title>
+</head>
+<body>
+   <h2>이벤트 버블링</h2>
+   <hr/>
+   <div id="parent">
+      <button id="child">클릭</button>
+   </div>
+
+
+   <div>2025. 7. 8</div> 
+
+   <script>
+      document.getElementById("parent").addEventListener("click",function(){
+         alert('parent div click');
+
+      });
+
+      document.getElementById("child").addEventListener("click",function(event){
+         alert('child div click');
+         event.stopPropagation();// 이벤트 버블링 중지
+      });      
+
+   </script>
+</body>
+</html>

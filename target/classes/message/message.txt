@@ -1,0 +1,22 @@
+greeting=안녕하세요.
+farewell=작별인사
+
+#message
+message.common.registered={0}되었습니다.
+message.registered=등록되었습니다.
+message.updated=수정되었습니다.
+message.deleted=삭제되었습니다.
+
+
+
+#login.jsp
+message.user.login.title=로그인
+message.user.login.id=아이디
+message.user.login.id.placeholder=아이디를 입력 하세요^^.
+message.user.login.password=비밀번호
+message.user.login.password.placeholder=비밀번호를 입력 하세요.
+message.user.login.loinBtn=로그인
+message.user.login.registBtn=회원가입
+message.user.login.language.en=영어
+message.user.login.language.ko=한글
+message.user.login.language.fr=프랑스

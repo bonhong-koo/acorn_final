@@ -1,0 +1,138 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>       
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/ehr/resources/favicon.ico" type="image/x-icon"/>
+<!-- bootstrap css-->
+<link href="/ehr/resources/assets/css/bootstrap.min.css" rel="stylesheet" >
+<title>즐거운_코딩</title>
+<!-- <script src="./js/j06.js" defer></script> -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script src="/ehr/resources/assets/js/common.js"></script>
+</head>
+<body>
+  <div class="container my-4">
+    <!-- 제목 -->
+    <div class="mb-3 border-bottom pb-2">
+      <h3>게시-목록</h3>
+    </div>
+
+    <!-- 버튼 -->
+    <div class="d-flex flex-wrap justify-content-end gap-2 mb-3">
+      <input type="button" class="btn btn-primary btn-sm" value="조회" />
+      <input type="button" class="btn btn-primary btn-sm" value="등록" />
+    </div>
+
+    <!-- 검색 Form -->
+    <form action="#" class="row g-2 align-items-center mb-3">
+      <div class="col-12 col-sm-4"></div>
+
+      <div class="col-4 col-sm-2 text-sm-end">
+        <label for="searchDiv" class="form-label mb-0">구분</label>
+      </div>
+
+      <div class="col-4 col-sm-2">
+        <select name="searchDiv" id="searchDiv" class="form-select form-select-sm">
+          <option value="">전체</option>
+          <option value="10">제목</option>
+          <option value="20">내용</option>
+          <option value="30">제목+내용</option>
+        </select>
+      </div>
+
+      <div class="col-12 col-sm-2">
+        <input type="search" name="searchWord" id="searchWord" value="" class="form-control form-control-sm" />
+      </div>
+
+      <div class="col-6 col-sm-2">
+        <select name="pageSize" id="pageSize" class="form-select form-select-sm">
+          <option value="10" selected>10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+      </div>
+    </form>
+
+    <!-- 테이블 (반응형) -->
+    <div class="table-responsive">
+      <table class="table table-striped table-hover table-bordered">
+        <colgroup>
+          <col width="10%" />
+          <col width="60%" />
+          <col width="10%" />
+          <col width="10%" />
+          <col width="10%" />
+          <col width="0%" />
+        </colgroup>
+        <thead class="table-info">
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>글쓴이</th>
+            <th>작성일</th>
+            <th>조회수</th>
+            <th style="display: none;">seq</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>제목18888888888888888</td>
+            <td>99이상무</td>
+            <td>2024/12/20</td>
+            <td>9</td>
+            <td style="display: none;">9</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>제목18888888888888888</td>
+            <td>99이상무</td>
+            <td>2024/12/20</td>
+            <td>0</td>
+            <td style="display: none;">9</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="text-start">제목38888888888888888</td>
+            <td>99이상무</td>
+            <td>2024/12/20</td>
+            <td>0</td>
+            <td style="display: none;">9</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 페이징 -->
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous"><span>&laquo;</span></a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#"><span>&lt;</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#"><span>&gt;</span></a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#"><span>&raquo;</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>    
+   <!--//container end ------------------------------------------------------->
+   <!--bootstrap js-->
+   <script src="/ehr/resources/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

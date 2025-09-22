@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>즐거운_코딩</title>
+</head>
+<body>
+   <h2>회원가입</h2>
+   <hr/>
+   <form>
+    <fieldset>
+      <legend>사용자정보</legend>
+      <div>
+         <label for="userId">아이디</label>
+         <input type="text" name="userId" id="userId" maxlength="30" minlength="3">
+      </div>
+      <div>
+         <label for="email">이메일</label>
+         <input type="email" name="email" id="email" maxlength="320" >
+      </div>
+      <div>
+         <label for="password">비밀번호</label>
+         <input type="password" name="password" id="password" maxlength="50" >
+      </div>   
+      <div>
+         <label for="password2">비밀번호 확인</label>
+         <input type="password" name="password2" id="password2" maxlength="50" >
+      </div>   
+      <div>
+         <label for="recommand">가입경로</label>
+         <select name="recommand" id="recommand">
+           <option value="10">SNS</option>
+           <option value="20">지인추천</option>
+         </select>
+      </div>
+      <div>
+         <label for="memo">메모</label>
+         <textarea name="memo" id="memo" maxlength="2000" cols="30" rows="5"></textarea>
+      </div>
+     
+    </fieldset>
+    <fieldset>
+      <legend>이벤트와 새로운 소식</legend>
+      <label><input type="radio" name="mail_recieve" id="mail_recieve" value="10"> 메일수신</label>
+      <label><input type="radio" name="mail_recieve" id="mail_recieve" value="20"> 메일미수신</label>
+
+    </fieldset>
+    <div>
+      <input type="submit" value="가입">
+      <input type="reset"  value="취소">
+    </div>
+   </form>
+
+   <div>2025. 7. 1</div> 
+</body>
+</html>

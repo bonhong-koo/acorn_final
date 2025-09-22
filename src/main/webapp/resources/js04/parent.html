@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>즐거운_코딩:JavaScript</title>
+</head>
+<body>
+   <h2>자바스크립트</h2>
+   <hr/>
+   <p id="result">자식 팝업으로부터 데이터 수신 대기...</p>
+   <button id="btn">open</button>
+
+   <div>2025. 7. 16</div> 
+   <script>
+      const btnButton =document.querySelector("#btn");
+      btnButton.addEventListener("click",function(e){
+         const screenHeight = window.screen.height;
+         const screenWidth = window.screen.width;
+         
+         console.log('screenWidth:'+screenWidth);
+         console.log('screenHeight:'+screenHeight);
+
+         const left=(screenWidth - 600)/2;
+         const top=(screenHeight - 400)/2;
+
+
+         let url = "child.html";
+         let options = `width=600,height=400,top=${top},left=${left}, resizable=no,scrollbars=yes`;
+         window.open(url,"_blank",options);
+
+      });
+
+      function receiveDataFromChild(data){
+         document.querySelector("#result").textContent="받은 데이터: "+data; 
+      }
+
+
+   </script>
+</body>
+</html>

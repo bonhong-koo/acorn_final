@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/template/baseLayout.jsp">
+
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/header.jsp"></put-attribute>
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/menu.jsp"></put-attribute>
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/footer.jsp"></put-attribute>
+
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+
+	</definition>
+
+	<definition name="login/*" extends="base-definition">
+		<put-attribute name="title"
+			value="오늘은 즐거운 목요일 하루전(login)"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/login/{1}.jsp"></put-attribute>
+	</definition>
+
+</tiles-definitions>       

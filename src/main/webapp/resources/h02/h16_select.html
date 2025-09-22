@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>즐거운_코딩</title>
+<style>
+   select {
+      width: 200px;
+      padding: 5px;/*안쪽 여백 */
+      border: 1px solid #ccc; /*테두리 */
+      border-radius: 10px; /* 둥근 테두리*/
+      font-size: 16px; /* 글자 크기 */
+   }
+
+   option{
+      padding: 5px; /* 옵션 내부 여백*/
+   }
+
+   select:focus{
+      border-color: aqua; /*포커스 테두리 색상 */
+      outline: none; /* 기존 포거스 스타일 제거 */
+   }
+
+
+</style>
+</head>
+<body>
+   <h2>&lt;select&gt;</h2>
+   <hr/>
+   <form action="/ehr/user/doSave.do">
+      <label for="category">카테고리 선택</label>
+      <select id="category" name="category" >
+         <option value="10">HTMl</option>
+         <option value="20">CSS</option>
+         <option value="30">JAVASCRIPT</option>
+      </select>
+      <input type="submit" value="전송" >
+   </form>
+   <div>2025. 6. 30</div> 
+</body>
+</html>

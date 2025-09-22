@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<!-- bootstrap css-->
+<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+<title>즐거운_코딩:JavaScript</title>
+<!-- <script src="./js/j06.js" defer></script> -->
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>네비게이션 포함 웹페이지</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Pen+Script&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Nanum Gothic", sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .search-box input {
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    main {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">My Website</div>
+    <nav>
+      <ul>
+        <li><a href="#">홈</a></li>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">문의</a></li>
+      </ul>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="검색...">
+    </div>
+  </header>
+
+  <main>
+    <h1>환영합니다!</h1>
+    <p>이곳은 네비게이션 바가 포함된 간단한 웹 페이지입니다.</p>
+    <p>스크롤을 내려도 네비게이션은 상단에 고정되어 있습니다.</p>
+    <p>추가 콘텐츠를 여기에 입력할 수 있습니다...</p>
+    <p style="margin-top: 1000px;">끝부분입니다.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 My Website. All rights reserved.
+  </footer>
+
+</body>
+</html>
+  
+   <!--//container end -------------------------------------------->
+   <!--bootstrap js-->
+   <script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>즐거운_코딩:JavaScript</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- container -->
+  <div class="container mt-4">
+    
+    <!-- 제목 -->
+    <div class="mb-4 border-bottom pb-2">
+      <h3>게시-등록</h3>
+    </div>
+
+    <!-- 버튼 -->
+    <div class="d-flex flex-wrap justify-content-end gap-2 mb-3">
+      <input type="button" class="btn btn-primary btn-sm" value="등록">
+      <input type="button" class="btn btn-secondary btn-sm" value="목록">
+    </div> 
+
+    <!-- form -->
+    <form action="#">
+
+      <div class="row mb-3">
+        <label for="title" class="col-md-2 col-form-label">제목</label>
+        <div class="col-md-10">
+          <input type="text" class="form-control" id="title" name="title" maxlength="100">
+        </div>
+      </div>  
+
+      <div class="row mb-3">
+        <label for="regId" class="col-md-2 col-form-label">작성자</label>
+        <div class="col-md-10">
+          <input type="text" class="form-control" id="regId" name="regId" maxlength="30">
+        </div>
+      </div>  
+
+      <div class="row mb-3">
+        <label for="contents" class="col-md-2 col-form-label">내용</label>
+        <div class="col-md-10">
+          <textarea class="form-control" id="contents" name="contents" rows="5"></textarea>
+        </div>
+      </div>
+
+    </form>
+    <!-- //form -->
+
+  </div>
+  <!-- //container -->
+
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+
+   #container{
+     width: 1200px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 120px 600px 100px;
+     gap: 2px;
+   }
+   #header{
+      background-color: #5c007A;
+      grid-column: 1/4;
+      grid-row: 1/2;
+   }
+   #aside{
+      background-color:#8e24AA;
+      grid-column: 1/2;
+      grid-row: 2/3;
+   }
+   #main{
+      background-color:#c158dc;
+      grid-column:2/4;
+      grid-row: 2/3;
+
+   }
+   #footer{
+      background-color:#f8bdcd;
+      grid-column:1/4;
+      grid-row: 3/4;      
+   }
+</style>
+<title>즐거운_코딩</title>
+</head>
+<body>
+   <div id="container">
+      <!--header-->
+      <header id="header"><h2>헤더</h2></header>
+      <!--//header end------------------->
+
+      <!--aside-->
+      <aside id="aside"><h2>aside</h2></aside>
+      <!--//aside end-------------------->
+
+      <!--main-->
+      <main id="main"><h2>본문</h2></main>
+      <!--//main end-------------------->
+
+      <!--footer-->
+      <footer id="footer"><h2>footer</h2></footer>
+      <!--//footer---------------------->      
+   </div>
+</body>
+</html>
